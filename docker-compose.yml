@@ -9,6 +9,5 @@ services:
       - .:/usr/src/app   # mount the host folder to the container to change code on the fly
     environment:
       FLASK_ENV: development
-      SECRET_MESSAGE: ciao
   redis:
     image: "redis:alpine"
