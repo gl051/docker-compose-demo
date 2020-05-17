@@ -1,4 +1,4 @@
-# Docker Compose 101
+# Docker Compose Demo
 
 A simple project building a Python web application running inside docker, using `docker-compose`
 
