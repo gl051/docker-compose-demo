@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - .:/code   # mount the host folder to the container to change code on the fly
+      - .:/usr/src/app   # mount the host folder to the container to change code on the fly
     environment:
       FLASK_ENV: development
       SECRET_MESSAGE: ciao

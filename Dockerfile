@@ -2,7 +2,7 @@
 FROM python:3.8.1-alpine
 
 # set working directory
-WORKDIR /code
+WORKDIR /usr/src/app
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -20,4 +20,4 @@ RUN apk add --no-cache gcc musl-dev linux-headers \
       && rm -rf /root/.cache/pip
 
 # copy project
-COPY . .
+COPY . /usr/src/app
